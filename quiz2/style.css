@@ -1,0 +1,28 @@
+#quiz #wrapper{
+	position: relative;
+	height: 430px;
+}
+
+#quiz .card {
+	z-index: -1;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#quiz .card.active {
+	z-index: 2;
+	opacity: 1;
+}
+
+#quiz #result {
+	text-align: center;
+}
+
+#quiz #previous,
+#quiz #next,
+#quiz #submit {
+	display: none;
+}

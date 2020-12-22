@@ -1,0 +1,79 @@
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {	
+	min-height: 100vh;
+	padding: 80px 0;
+	display: flex;
+	align-items: center;
+}
+
+#loading {
+	height: 100vh;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 99;
+	transition: all .2s;
+}
+
+#loading img {
+	height: 35px;
+}
+
+#quiz.container {
+	max-width: 500px;
+}
+
+#quiz .card {
+	margin-bottom: 30px;
+}
+
+#quiz .card:last-child {
+	margin-bottom: 80px;
+}
+
+#quiz .card-body {
+	padding: 2rem;
+}
+
+#quiz .card-title {
+	font-size: 20px;
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+
+#quiz .check-wrapper {
+	border-bottom: 1px solid rgba(0 ,0 ,0 ,.125);
+	padding: 10px 20px;
+	margin-bottom: 10px;
+}
+
+#quiz .check-wrapper:last-child {
+	border-bottom: 0;
+}
+
+#quiz .card.alert-danger .check-wrapper{
+	border-color: #f5c2c7;
+}
+
+#quiz .card.alert-success .check-wrapper{
+	border-color: #badbcc;
+}
+
+#quiz .check-wrapper:last-child {
+	margin-bottom: 0;
+}
+
+#quiz #result {
+	margin-bottom: 30px;
+	display: none;
+}
+
+#quiz .btn {
+	padding: 10px 20px;
+}
